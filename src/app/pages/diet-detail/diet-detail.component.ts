@@ -15,13 +15,21 @@ export class DietDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private productsService: HttpDietService
+    private httpDietService: HttpDietService
   ) { }
 
   ngOnInit() {
-    /*this.route.params.subscribe((params: Params) => {
+    this.route.params.subscribe((params: Params) => {
       const id = params.id;
-      this.diet = this.productsService.getAllProducts(id);
-    });*/
+      this.fetchProduct(id);
+      // this.product = this.productsService.getProduct(id);
+    });
+  }
+
+  fetchProduct(id: string) {
+    this.httpDietService.getDiet(id)
+      .subscribe(diet => {
+        this.diet = diet;
+      });
   }
 }

@@ -2,8 +2,13 @@ main {
   width: 70%;
   margin: auto;
   text-align: center;
+
 }
 
+h1 {
+  font-weight: bold;
+  color: green;
+}
 button {
   margin-top: 20px;
   background-color: #2D8CFF;
@@ -28,3 +33,5 @@ html, body {
 #zmmtg-root {
   display: none;
 }
+
+

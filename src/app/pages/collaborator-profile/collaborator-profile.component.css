@@ -13,3 +13,11 @@ th {
 .text-button {
   color: green;
 }
+.cont {
+  text-align: center;
+  color: green;
+}
+.buton {
+  background-color: green;
+  color: white;
+}
